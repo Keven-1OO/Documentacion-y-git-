@@ -3,11 +3,11 @@ package modelo.javabean;
 public class Contacto {
 	
 	// Attributes
-	private String nombre;
-	private String apellidos;
-	private String telefono;
-	private String email;
-	private String empresa;
+	public String nombre;
+	public String apellidos;
+	public String telefono;
+	public String email;
+	public String empresa;
 	
 	// Constructor
 	
