@@ -14,7 +14,10 @@ public class AgendaContactos implements GestionAgenda{
 		lista = new ArrayList<>();
 		cargardatos();
 	}
-	
+
+	/**
+	 * contiene la lista de contactos
+	 */
 	private void cargardatos() {
 		lista.add(new Contacto("Tomas", "Escudero", "123456789", "tomas@ifp.es", "Inovacion en Formacion Profesional"));
 		lista.add(new Contacto("Matthew", "TheGoat", "613459588", "tmatrix777@gmail.com", "Sony"));
@@ -33,6 +36,12 @@ public class AgendaContactos implements GestionAgenda{
 
 	
 	//Implement methods from GestionAgenda
+
+	/**
+	 *
+	 * @param contacto variable creada para dar de alta a un contacto
+	 * @return
+	 */
 	@Override
 	public boolean altaContacto(Contacto contacto) {
 		if (!lista.contains(contacto)) {
@@ -48,6 +57,12 @@ public class AgendaContactos implements GestionAgenda{
 		return false;
 	}
 
+
+	/**
+	 *
+	 * @param nombre busca un contacto por su nombre
+	 * @return
+	 */
 	@Override
 	public Contacto buscarUno(String nombre) {
 		Contacto contacto = new Contacto();
